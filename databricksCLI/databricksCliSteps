@@ -1,0 +1,40 @@
+
+-- Home Brew
+
+1. Get the home brew {This is onetime is the brew is not installed in your system}
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+2. This will ask for "sudo" pin
+
+Give network password
+
+-- Install python
+
+1. go to https://www.python.org/downloads/ and dowload 3.10.5
+2. install it
+3. check python3 --version
+4. pip3 --version
+
+-- Install Azure CLI
+
+1. brew update && brew install azure-cli
+2. if unable to find python or installed package
+
+brew update && brew install python@3.10 && brew upgrade python@3.10
+brew link --overwrite python@3.10
+
+3. check if azure CLI got installed by typing:
+
+az
+
+-- Install Databricks CLI
+
+1. brew install databricks-cli
+2. Check if databricks CLI got installed by typing:
+
+databricks
+
+or
+
+databricks --help
